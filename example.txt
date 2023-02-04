@@ -1,0 +1,1 @@
+./task3.sh --firstFile ./filesToTestOn/test1.py --secondFile ./filesToTestOn/test3.py 
