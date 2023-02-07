@@ -30,4 +30,8 @@ if firstFileExist == False or secondFileExist == False:
   print("firstFile and secondFile args is mandatory, check -h or --help")
   sys.exit(3)
 d=tkdiff.tkdiffMethod(str(firstFile),str(secondFile))
+difference = list(d)
+difference = '\n'.join(difference)
+print (difference)
+d=tkdiff.tkdiffMethod(str(firstFile),str(secondFile))
 gui.init(str(firstFile),str(secondFile),d)
